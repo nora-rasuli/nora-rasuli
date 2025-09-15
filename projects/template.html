@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="page-title">Project - Nora Rasuli</title>
+    <meta
+      name="description"
+      id="page-description"
+      content="Project details and case study"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article" />
+    <meta property="og:url" id="og-url" content="" />
+    <meta property="og:title" id="og-title" content="" />
+    <meta property="og:description" id="og-description" content="" />
+    <meta property="og:image" id="og-image" content="" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" id="twitter-url" content="" />
+    <meta property="twitter:title" id="twitter-title" content="" />
+    <meta property="twitter:description" id="twitter-description" content="" />
+    <meta property="twitter:image" id="twitter-image" content="" />
+
+    <!-- JSON-LD Schema -->
+    <script type="application/ld+json" id="json-ld">
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "",
+        "description": "",
+        "author": {
+          "@type": "Person",
+          "name": "Nora Rasuli"
+        }
+      }
+    </script>
+
+    <link rel="stylesheet" href="../styles/tokens.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="stylesheet" href="../styles/components.css" />
+    <link rel="stylesheet" href="../styles/themes.css" />
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav__container">
+          <a href="/" class="nav__brand" aria-label="Nora Rasuli - Home"
+            >Nora Rasuli</a
+          >
+          <div class="nav__links">
+            <a href="/#projects" class="nav__link">Projects</a>
+            <a href="/#about" class="nav__link">About</a>
+            <a href="/#contact" class="nav__link">Contact</a>
+            <button
+              class="theme-toggle"
+              aria-label="Toggle dark mode"
+              title="Toggle dark mode"
+            >
+              <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Back Navigation -->
+      <div class="project-nav">
+        <div class="project-nav__container">
+          <a href="/#projects" class="project-nav__back">
+            <span class="project-nav__icon" aria-hidden="true">←</span>
+            Back to Projects
+          </a>
+        </div>
+      </div>
+
+      <!-- Project Header -->
+      <section class="project-header" id="project-header">
+        <div class="project-header__container">
+          <div class="project-header__content">
+            <h1 class="project-header__title" id="project-title">
+              Project Title
+            </h1>
+            <p class="project-header__subtitle" id="project-subtitle">
+              Project Subtitle
+            </p>
+            <div class="project-header__meta">
+              <div class="project-meta">
+                <div class="project-meta__item">
+                  <span class="project-meta__label">Role:</span>
+                  <span class="project-meta__value" id="project-role"
+                    >Role</span
+                  >
+                </div>
+                <div class="project-meta__item">
+                  <span class="project-meta__label">Year:</span>
+                  <span class="project-meta__value" id="project-year"
+                    >2024</span
+                  >
+                </div>
+                <div class="project-meta__item">
+                  <span class="project-meta__label">Status:</span>
+                  <span class="project-meta__value" id="project-status"
+                    >Live</span
+                  >
+                </div>
+              </div>
+              <div class="project-header__tags" id="project-tags">
+                <!-- Tags will be populated by JavaScript -->
+              </div>
+              <div class="project-header__links" id="project-links">
+                <!-- Links will be populated by JavaScript -->
+              </div>
+            </div>
+          </div>
+          <div class="project-header__image" id="project-hero-image">
+            <!-- Hero image will be populated by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Table of Contents -->
+      <nav class="toc" id="table-of-contents" aria-label="Table of contents">
+        <h3 class="toc__title">Contents</h3>
+        <ul class="toc__list" id="toc-list">
+          <!-- TOC will be generated by JavaScript -->
+        </ul>
+      </nav>
+
+      <!-- Project Content -->
+      <article class="project-content">
+        <div class="project-content__container">
+          <!-- Overview Section -->
+          <section class="project-section" id="overview">
+            <h2 class="project-section__title">Overview</h2>
+            <div class="project-section__content" id="overview-content">
+              <!-- Content will be populated by JavaScript -->
+            </div>
+          </section>
+
+          <!-- Problem & Goals Section -->
+          <section
+            class="project-section"
+            id="problem-goals"
+            style="display: none"
+          >
+            <h2 class="project-section__title">Problem & Goals</h2>
+            <div class="project-section__content">
+              <div
+                class="project-subsection"
+                id="problem-content"
+                style="display: none"
+              >
+                <h3 class="project-subsection__title">The Problem</h3>
+                <div
+                  class="project-subsection__content"
+                  id="problem-text"
+                ></div>
+              </div>
+              <div
+                class="project-subsection"
+                id="goals-content"
+                style="display: none"
+              >
+                <h3 class="project-subsection__title">Goals</h3>
+                <div class="project-subsection__content" id="goals-text"></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Research & UX Section -->
+          <section
+            class="project-section"
+            id="research-ux"
+            style="display: none"
+          >
+            <h2 class="project-section__title">Research & UX</h2>
+            <div class="project-section__content" id="research-content">
+              <!-- Content will be populated by JavaScript -->
+            </div>
+          </section>
+
+          <!-- Design Section -->
+          <section class="project-section" id="design" style="display: none">
+            <h2 class="project-section__title">Design</h2>
+            <div class="project-section__content" id="design-content">
+              <!-- Content will be populated by JavaScript -->
+            </div>
+          </section>
+
+          <!-- Build Section -->
+          <section class="project-section" id="build" style="display: none">
+            <h2 class="project-section__title">Build</h2>
+            <div class="project-section__content" id="build-content">
+              <!-- Content will be populated by JavaScript -->
+            </div>
+          </section>
+
+          <!-- Demo & Code Section -->
+          <section class="project-section" id="demo-code" style="display: none">
+            <h2 class="project-section__title">Demo & Code</h2>
+            <div class="project-section__content" id="demo-content">
+              <!-- Content will be populated by JavaScript -->
+            </div>
+          </section>
+
+          <!-- Outcomes Section -->
+          <section class="project-section" id="outcomes" style="display: none">
+            <h2 class="project-section__title">Outcomes</h2>
+            <div class="project-section__content" id="outcomes-content">
+              <!-- Content will be populated by JavaScript -->
+            </div>
+          </section>
+
+          <!-- Gallery Section -->
+          <section class="project-section" id="gallery" style="display: none">
+            <h2 class="project-section__title">Gallery</h2>
+            <div class="project-section__content" id="gallery-content">
+              <!-- Content will be populated by JavaScript -->
+            </div>
+          </section>
+        </div>
+      </article>
+
+      <!-- Project Navigation Footer -->
+      <nav
+        class="project-nav-footer"
+        id="project-nav-footer"
+        style="display: none"
+      >
+        <div class="project-nav-footer__container">
+          <a
+            href="#"
+            class="project-nav-footer__link project-nav-footer__link--prev"
+            id="prev-project"
+          >
+            <span class="project-nav-footer__icon" aria-hidden="true">←</span>
+            <span class="project-nav-footer__text">
+              <span class="project-nav-footer__label">Previous</span>
+              <span
+                class="project-nav-footer__title"
+                id="prev-project-title"
+              ></span>
+            </span>
+          </a>
+          <a
+            href="#"
+            class="project-nav-footer__link project-nav-footer__link--next"
+            id="next-project"
+          >
+            <span class="project-nav-footer__text">
+              <span class="project-nav-footer__label">Next</span>
+              <span
+                class="project-nav-footer__title"
+                id="next-project-title"
+              ></span>
+            </span>
+            <span class="project-nav-footer__icon" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </nav>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <p class="footer__text">
+          &copy; 2024 Nora Rasuli. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="../scripts/theme-toggle.js"></script>
+    <script type="module" src="../scripts/render-project.js"></script>
+    <script type="module" src="../scripts/seo.js"></script>
+  </body>
+</html>
