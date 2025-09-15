@@ -532,7 +532,7 @@ class ProjectRenderer {
     // Previous project
     if (this.currentIndex > 0) {
       const prevProject = this.projects[this.currentIndex - 1];
-      prevLink.href = `/projects/${prevProject.slug}.html`;
+      prevLink.href = `${prevProject.slug}.html`;
       prevTitle.textContent = prevProject.title;
     } else {
       prevLink.style.display = "none";
@@ -541,7 +541,7 @@ class ProjectRenderer {
     // Next project
     if (this.currentIndex < this.projects.length - 1) {
       const nextProject = this.projects[this.currentIndex + 1];
-      nextLink.href = `/projects/${nextProject.slug}.html`;
+      nextLink.href = `${nextProject.slug}.html`;
       nextTitle.textContent = nextProject.title;
     } else {
       nextLink.style.display = "none";
@@ -563,8 +563,8 @@ class ProjectRenderer {
             The project you're looking for doesn't exist or has been moved.
           </p>
           <div class="error-page__actions">
-            <a href="/" class="button button--primary">Go Home</a>
-            <a href="/#projects" class="button button--secondary">View Projects</a>
+            <a href="../" class="button button--primary">Go Home</a>
+            <a href="../#projects" class="button button--secondary">View Projects</a>
           </div>
         </div>
       </div>
@@ -584,7 +584,7 @@ class ProjectRenderer {
             Unable to load the project. Please try again later.
           </p>
           <div class="error-page__actions">
-            <a href="/" class="button button--primary">Go Home</a>
+            <a href="../" class="button button--primary">Go Home</a>
             <button onclick="location.reload()" class="button button--secondary">Retry</button>
           </div>
         </div>

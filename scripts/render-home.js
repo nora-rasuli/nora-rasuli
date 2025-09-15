@@ -286,7 +286,7 @@ class HomepageRenderer {
     // Primary action - View Case Study
     const primaryAction = createElement("a", {
       className: "button button--primary card__action",
-      href: `/projects/${project.slug}.html`,
+      href: `projects/${project.slug}.html`,
       textContent: "View Case Study",
     });
 
