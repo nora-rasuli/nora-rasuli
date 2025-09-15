@@ -38,10 +38,42 @@ class HomepageRenderer {
 
   async loadProjects() {
     try {
-      const response = await fetch("/data/projects.json");
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+      // Try multiple possible paths for GitHub Pages compatibility
+      const possiblePaths = [
+        "/data/projects.json",
+        "./data/projects.json",
+        "data/projects.json",
+        "/projects.json",
+        "./projects.json",
+        "projects.json",
+        "/nora-rasuli/data/projects.json",
+      ];
+
+      let response = null;
+      let lastError = null;
+
+      for (const path of possiblePaths) {
+        try {
+          console.log(`Trying to load projects from: ${path}`);
+          response = await fetch(path);
+          if (response.ok) {
+            console.log(`Successfully loaded projects from: ${path}`);
+            break;
+          }
+        } catch (err) {
+          console.log(`Failed to load from ${path}:`, err.message);
+          lastError = err;
+        }
       }
+
+      if (!response || !response.ok) {
+        throw new Error(
+          `HTTP error! status: ${
+            response?.status || "Network error"
+          }. Tried paths: ${possiblePaths.join(", ")}`
+        );
+      }
+
       const data = await response.json();
       this.projects = data.projects || [];
       this.filteredProjects = [...this.projects];
