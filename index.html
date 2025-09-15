@@ -3,213 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nora Rasuli - Frontend/UI Engineer</title>
+    <title>Frontend Portfolio</title>
     <meta
       name="description"
-      content="Frontend/UI Engineer specializing in modern web development, user experience design, and accessible interfaces."
+      content="A modern, minimal frontend engineering portfolio showcasing clean, whitespace-driven design and innovative projects."
     />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://nora-rasuli.github.io/" />
-    <meta property="og:title" content="Nora Rasuli - Frontend/UI Engineer" />
-    <meta
-      property="og:description"
-      content="Frontend/UI Engineer specializing in modern web development, user experience design, and accessible interfaces."
-    />
-    <meta
-      property="og:image"
-      content="https://nora-rasuli.github.io/assets/social-preview.jpg"
-    />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://nora-rasuli.github.io/" />
-    <meta
-      property="twitter:title"
-      content="Nora Rasuli - Frontend/UI Engineer"
-    />
-    <meta
-      property="twitter:description"
-      content="Frontend/UI Engineer specializing in modern web development, user experience design, and accessible interfaces."
-    />
-    <meta
-      property="twitter:image"
-      content="https://nora-rasuli.github.io/assets/social-preview.jpg"
-    />
-
-    <!-- JSON-LD Schema -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Nora Rasuli",
-        "jobTitle": "Frontend/UI Engineer",
-        "url": "https://nora-rasuli.github.io",
-        "sameAs": [
-          "https://github.com/nora-rasuli",
-          "https://linkedin.com/in/nora-rasuli"
-        ]
-      }
-    </script>
-
-    <link rel="stylesheet" href="styles/tokens.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/components.css" />
-    <link rel="stylesheet" href="styles/themes.css" />
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   </head>
   <body>
     <header class="header">
-      <nav class="nav" role="navigation" aria-label="Main navigation">
-        <div class="nav__container">
-          <a href="/" class="nav__brand" aria-label="Nora Rasuli - Home"
-            >Nora Rasuli</a
-          >
-          <div class="nav__links">
-            <a href="#projects" class="nav__link">Projects</a>
-            <a href="#about" class="nav__link">About</a>
-            <a href="#contact" class="nav__link">Contact</a>
-            <button
-              class="theme-toggle"
-              aria-label="Toggle dark mode"
-              title="Toggle dark mode"
-            >
-              <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
-            </button>
-          </div>
-        </div>
-      </nav>
+      <div class="container">
+        <h1 class="logo">Portfolio</h1>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle dark mode"
+        >
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
     </header>
 
     <main class="main">
-      <!-- Hero Section -->
-      <section class="hero" id="hero">
-        <div class="hero__container">
-          <h1 class="hero__title">Nora Rasuli</h1>
-          <p class="hero__subtitle">Frontend/UI Engineer</p>
-          <p class="hero__description">
-            Crafting exceptional user experiences through clean code, thoughtful
-            design, and accessible interfaces.
+      <div class="container">
+        <section class="hero">
+          <h2 class="hero-title">Frontend Engineering</h2>
+          <p class="hero-description">
+            Clean, minimal, and purposeful design solutions
           </p>
-          <div class="hero__highlights">
-            <span class="badge">5+ Years Experience</span>
-            <span class="badge">React • TypeScript</span>
-            <span class="badge">Design Systems</span>
-            <span class="badge">Accessibility</span>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Projects Section -->
-      <section class="projects" id="projects">
-        <div class="projects__container">
-          <h2 class="projects__title">Featured Projects</h2>
-          <p class="projects__subtitle">
-            A collection of my recent work and case studies
-          </p>
-
-          <!-- Filter Controls -->
-          <div class="projects__filters">
-            <div class="filter-group">
-              <label for="category-filter" class="filter-label"
-                >Category:</label
-              >
-              <select
-                id="category-filter"
-                class="filter-select"
-                aria-label="Filter projects by category"
-              >
-                <option value="">All Projects</option>
-              </select>
-            </div>
-            <div class="filter-group">
-              <label for="search-filter" class="filter-label">Search:</label>
-              <input
-                type="search"
-                id="search-filter"
-                class="filter-input"
-                placeholder="Search projects..."
-                aria-label="Search projects by title, description, or technology"
-              />
-            </div>
-          </div>
-
-          <!-- Projects Grid -->
-          <div class="projects__grid" id="projects-grid">
-            <!-- Projects will be rendered here by JavaScript -->
-            <div class="projects__loading">
-              <p>Loading projects...</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- About Section -->
-      <section class="about" id="about">
-        <div class="about__container">
-          <h2 class="about__title">About</h2>
-          <div class="about__content">
-            <p class="about__text">
-              I'm a passionate Frontend/UI Engineer with over 5 years of
-              experience building modern web applications. I specialize in
-              React, TypeScript, and creating accessible, performant user
-              interfaces.
-            </p>
-            <p class="about__text">
-              My approach combines technical excellence with user-centered
-              design, ensuring that every project delivers both beautiful
-              aesthetics and exceptional functionality.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section class="contact" id="contact">
-        <div class="contact__container">
-          <h2 class="contact__title">Get In Touch</h2>
-          <p class="contact__subtitle">
-            Let's work together on your next project
-          </p>
-          <div class="contact__links">
-            <a href="mailto:nora@example.com" class="contact__link">
-              <span class="contact__icon" aria-hidden="true">✉️</span>
-              nora@example.com
-            </a>
-            <a
-              href="https://github.com/nora-rasuli"
-              class="contact__link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="contact__icon" aria-hidden="true">🐙</span>
-              GitHub
-            </a>
-            <a
-              href="https://linkedin.com/in/nora-rasuli"
-              class="contact__link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <span class="contact__icon" aria-hidden="true">💼</span>
-              LinkedIn
-            </a>
-          </div>
-        </div>
-      </section>
+        <section class="projects" id="projectsContainer">
+          <!-- Projects will be loaded dynamically -->
+        </section>
+      </div>
     </main>
 
     <footer class="footer">
-      <div class="footer__container">
-        <p class="footer__text">
-          &copy; 2024 Nora Rasuli. All rights reserved.
+      <div class="container">
+        <p>
+          &copy; 2024 Frontend Portfolio. Built with HTML, CSS, and JavaScript.
         </p>
       </div>
     </footer>
 
-    <!-- Scripts -->
-    <script type="module" src="scripts/theme-toggle.js"></script>
-    <script type="module" src="scripts/render-home.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/darkmode.js"></script>
   </body>
 </html>

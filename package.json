@@ -1,0 +1,32 @@
+{
+  "name": "frontend-portfolio",
+  "version": "1.0.0",
+  "description": "A simple, modern, whitespace-driven frontend engineering portfolio built with HTML, CSS, and JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "generate": "node generate-projects.js",
+    "add-project": "node generate-projects.js add",
+    "remove-project": "node generate-projects.js remove",
+    "serve": "python3 -m http.server 8000",
+    "serve-python2": "python -m SimpleHTTPServer 8000"
+  },
+  "keywords": [
+    "portfolio",
+    "frontend",
+    "html",
+    "css",
+    "javascript",
+    "responsive",
+    "dark-mode"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/frontend-portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/frontend-portfolio/issues"
+  },
+  "homepage": "https://yourusername.github.io/frontend-portfolio"
+}

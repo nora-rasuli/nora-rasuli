@@ -1,181 +1,59 @@
 {
   "projects": [
     {
-      "slug": "ecommerce-platform",
-      "title": "E-Commerce Platform",
-      "subtitle": "Modern React e-commerce solution with advanced filtering and checkout",
-      "status": "Live",
-      "year": 2024,
-      "role": "Frontend Engineer",
-      "stack": ["React", "TypeScript", "Next.js", "Tailwind CSS", "Stripe"],
-      "tags": ["E-commerce", "React", "TypeScript", "Payment Integration"],
-      "heroImage": "/assets/projects/ecommerce-platform/hero.jpg",
-      "thumbnail": "/assets/projects/ecommerce-platform/thumbnail.jpg",
-      "links": {
-        "live": "https://ecommerce-demo.example.com",
-        "repo": "https://github.com/nora-rasuli/ecommerce-platform",
-        "figma": "https://figma.com/design/ecommerce-platform"
-      },
-      "overview": "A comprehensive e-commerce platform built with React and TypeScript, featuring advanced product filtering, secure checkout process, and responsive design. The platform handles thousands of products with optimized performance and accessibility.",
-      "problem": "The existing e-commerce solution was slow, inaccessible, and difficult to maintain. Users struggled to find products due to poor filtering options, and the checkout process had a high abandonment rate.",
-      "goals": [
-        "Improve page load times by 50%",
-        "Implement advanced filtering and search",
-        "Create accessible, mobile-first design",
-        "Reduce checkout abandonment by 30%",
-        "Build maintainable, scalable codebase"
-      ],
-      "research": "Conducted user interviews with 20+ customers to understand pain points. Analyzed analytics data to identify drop-off points. Created user personas and journey maps to guide design decisions.",
-      "design": {
-        "description": "Designed a clean, modern interface with focus on usability and accessibility. Created a comprehensive design system with reusable components.",
-        "images": [
-          {
-            "src": "/assets/projects/ecommerce-platform/design-1.jpg",
-            "alt": "Homepage design showing product grid and navigation",
-            "caption": "Homepage with featured products and navigation"
-          },
-          {
-            "src": "/assets/projects/ecommerce-platform/design-2.jpg",
-            "alt": "Product filtering interface with multiple filter options",
-            "caption": "Advanced filtering system with real-time updates"
-          },
-          {
-            "src": "/assets/projects/ecommerce-platform/design-3.jpg",
-            "alt": "Checkout process with step-by-step form",
-            "caption": "Streamlined checkout process with progress indicator"
-          }
-        ]
-      },
-      "build": {
-        "description": "Built with React 18, TypeScript, and Next.js for optimal performance. Implemented custom hooks for state management and used React Query for data fetching.",
-        "features": [
-          "Server-side rendering with Next.js",
-          "Custom filtering and search algorithms",
-          "Stripe payment integration",
-          "Responsive design with mobile-first approach",
-          "Accessibility compliance (WCAG 2.1 AA)",
-          "Performance optimization with lazy loading"
-        ]
-      },
-      "demo": "The live demo includes a full product catalog with sample data. You can test the filtering, search, and checkout process. Use test card 4242 4242 4242 4242 for payment testing.",
-      "outcomes": [
-        {
-          "label": "Page Load Time",
-          "value": "-52%"
-        },
-        {
-          "label": "Checkout Completion",
-          "value": "+28%"
-        },
-        {
-          "label": "User Satisfaction",
-          "value": "+35%"
-        },
-        {
-          "label": "Mobile Conversion",
-          "value": "+42%"
-        }
-      ],
-      "gallery": [
-        {
-          "src": "/assets/projects/ecommerce-platform/gallery-1.jpg",
-          "alt": "Mobile view of product listing page",
-          "caption": "Responsive mobile design"
-        },
-        {
-          "src": "/assets/projects/ecommerce-platform/gallery-2.jpg",
-          "alt": "Desktop view of shopping cart",
-          "caption": "Shopping cart with item management"
-        },
-        {
-          "src": "/assets/projects/ecommerce-platform/gallery-3.jpg",
-          "alt": "Admin dashboard for product management",
-          "caption": "Admin dashboard interface"
-        }
+      "id": "project-1",
+      "title": "E-Commerce Dashboard",
+      "description": "A comprehensive admin dashboard for managing e-commerce operations with real-time analytics, inventory management, and customer insights. Built with modern web technologies and responsive design principles.",
+      "image": "assets/project-1.jpg",
+      "url": "projects/project-1.html",
+      "technologies": ["HTML", "CSS", "JavaScript", "Chart.js"],
+      "features": [
+        "Real-time analytics",
+        "Responsive design",
+        "Interactive charts",
+        "Data visualization"
       ]
     },
     {
-      "slug": "design-system",
-      "title": "Design System",
-      "subtitle": "Comprehensive design system for consistent UI across products",
-      "status": "Live",
-      "year": 2023,
-      "role": "Frontend Engineer & Designer",
-      "stack": ["React", "TypeScript", "Storybook", "CSS-in-JS", "Figma"],
-      "tags": ["Design System", "React", "Documentation", "Accessibility"],
-      "heroImage": "/assets/projects/design-system/hero.jpg",
-      "thumbnail": "/assets/projects/design-system/thumbnail.jpg",
-      "links": {
-        "live": "https://design-system.example.com",
-        "repo": "https://github.com/nora-rasuli/design-system",
-        "figma": "https://figma.com/design/design-system"
-      },
-      "overview": "A comprehensive design system built for consistency across multiple products. Includes 50+ reusable components, design tokens, and comprehensive documentation.",
-      "problem": "Multiple products had inconsistent UI patterns, leading to poor user experience and increased development time. Designers and developers needed a single source of truth for UI components.",
-      "goals": [
-        "Create consistent UI across all products",
-        "Reduce development time by 40%",
-        "Improve accessibility standards",
-        "Provide comprehensive documentation",
-        "Enable rapid prototyping"
-      ],
-      "research": "Audited existing components across 5 products to identify common patterns. Interviewed 15+ developers and designers to understand their needs and pain points.",
-      "design": {
-        "description": "Created a cohesive design language with clear hierarchy, consistent spacing, and accessible color palettes. All components follow atomic design principles.",
-        "images": [
-          {
-            "src": "/assets/projects/design-system/design-1.jpg",
-            "alt": "Design system color palette and typography",
-            "caption": "Color palette and typography scale"
-          },
-          {
-            "src": "/assets/projects/design-system/design-2.jpg",
-            "alt": "Component library showing buttons, forms, and cards",
-            "caption": "Core component library"
-          }
-        ]
-      },
-      "build": {
-        "description": "Built with React and TypeScript for type safety. Used CSS-in-JS for theming and Storybook for documentation and testing.",
-        "features": [
-          "50+ reusable components",
-          "Dark and light theme support",
-          "Comprehensive Storybook documentation",
-          "Automated accessibility testing",
-          "Design token system",
-          "Figma integration"
-        ]
-      },
-      "demo": "The design system documentation includes interactive examples of all components. You can test different themes and view code examples for each component.",
-      "outcomes": [
-        {
-          "label": "Development Speed",
-          "value": "+45%"
-        },
-        {
-          "label": "Design Consistency",
-          "value": "+90%"
-        },
-        {
-          "label": "Accessibility Score",
-          "value": "98/100"
-        },
-        {
-          "label": "Developer Adoption",
-          "value": "95%"
-        }
-      ],
-      "gallery": [
-        {
-          "src": "/assets/projects/design-system/gallery-1.jpg",
-          "alt": "Storybook documentation interface",
-          "caption": "Interactive component documentation"
-        },
-        {
-          "src": "/assets/projects/design-system/gallery-2.jpg",
-          "alt": "Figma design system file",
-          "caption": "Figma integration and design files"
-        }
+      "id": "project-2",
+      "title": "Weather App",
+      "description": "A clean, intuitive weather application that provides current conditions and forecasts. Features location-based weather data, beautiful animations, and a minimal interface that focuses on essential information.",
+      "image": "assets/project-2.jpg",
+      "url": "projects/project-2.html",
+      "technologies": ["HTML", "CSS", "JavaScript", "Weather API"],
+      "features": [
+        "Location-based data",
+        "5-day forecast",
+        "Beautiful animations",
+        "Minimal design"
+      ]
+    },
+    {
+      "id": "project-3",
+      "title": "Task Management Tool",
+      "description": "A productivity-focused task management application with drag-and-drop functionality, project organization, and team collaboration features. Designed for efficiency and ease of use.",
+      "image": "assets/project-3.jpg",
+      "url": "projects/project-3.html",
+      "technologies": ["HTML", "CSS", "JavaScript", "Local Storage"],
+      "features": [
+        "Drag & drop",
+        "Project organization",
+        "Team collaboration",
+        "Data persistence"
+      ]
+    },
+    {
+      "id": "project-4",
+      "title": "Portfolio Website",
+      "description": "A responsive portfolio website showcasing creative work and professional experience. Features smooth animations, dark mode support, and optimized performance across all devices.",
+      "image": "assets/project-4.jpg",
+      "url": "projects/project-4.html",
+      "technologies": ["HTML", "CSS", "JavaScript", "GSAP"],
+      "features": [
+        "Responsive design",
+        "Dark mode",
+        "Smooth animations",
+        "Performance optimized"
       ]
     }
   ]
