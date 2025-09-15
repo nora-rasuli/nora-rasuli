@@ -345,16 +345,22 @@ class ProjectPage {
                     }</p>
                     <div class="project-links">
                         <a href="${
-                          this.currentProject.figmaLink || "#"
+                          this.currentProject.liveDemo || "#"
                         }" class="project-link" target="_blank" rel="noopener">
-                            <span class="link-icon">🎨</span>
-                            View Figma Design
+                            <span class="link-icon">🚀</span>
+                            Live Demo
                         </a>
                         <a href="${
                           this.currentProject.githubLink || "#"
                         }" class="project-link" target="_blank" rel="noopener">
                             <span class="link-icon">💻</span>
                             View on GitHub
+                        </a>
+                        <a href="${
+                          this.currentProject.figmaLink || "#"
+                        }" class="project-link" target="_blank" rel="noopener">
+                            <span class="link-icon">🎨</span>
+                            View Figma Design
                         </a>
                     </div>
                 </section>

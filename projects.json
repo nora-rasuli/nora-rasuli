@@ -67,6 +67,48 @@
       "improvements": "Would add a blog section and case study templates for future projects.",
       "figmaLink": "https://figma.com/project-4",
       "githubLink": "https://github.com/nora-rasuli/portfolio"
+    },
+    {
+      "id": "project-5",
+      "title": "Giant Pennies",
+      "tagline": "Interactive React application with modern UI",
+      "description": "A React-based web application built with Create React App and styled with Tailwind CSS. Features modern development practices, responsive design, and optimized build process for production deployment.",
+      "image": "assets/project-5.jpg",
+      "url": "projects/project-5.html",
+      "technologies": [
+        "React",
+        "JavaScript",
+        "Tailwind CSS",
+        "Create React App",
+        "Vercel"
+      ],
+      "problem": "Needed to create a modern, interactive web application that demonstrates proficiency with React ecosystem and modern development tools while maintaining clean, maintainable code.",
+      "research": "Analyzed React best practices and modern development workflows. Researched Tailwind CSS for utility-first styling approach and Vercel for seamless deployment pipeline.",
+      "design": "Designed a clean, modern interface using Tailwind CSS utility classes. Focused on responsive design principles and component-based architecture for maintainability.",
+      "development": "Built with Create React App for rapid development setup. Implemented component-based architecture with React hooks. Used Tailwind CSS for styling and PostCSS for build optimization. Deployed to Vercel for production hosting.",
+      "outcome": "Successfully deployed application with 0 build errors, responsive design across all devices, and optimized performance. Demonstrated proficiency with modern React development stack.",
+      "improvements": "Would add state management with Redux or Context API, implement testing with Jest/React Testing Library, and add more interactive features.",
+      "figmaLink": "https://figma.com/project-5",
+      "githubLink": "https://github.com/nora-rasuli/giant-pennies",
+      "liveDemo": "https://giant-pennies.vercel.app/login"
+    },
+    {
+      "id": "project-6",
+      "title": "NutriFood",
+      "tagline": "Personalized meal planning with nutrition tracking",
+      "description": "A comprehensive meal planning web application that helps users create personalized nutrition plans based on their health data. Features BMR calculation, daily meal planning, macro tracking, and favorite meal saving functionality.",
+      "image": "assets/project-6.jpg",
+      "url": "projects/project-6.html",
+      "technologies": ["PHP", "SQL", "SCSS", "JavaScript", "Spoonacular API"],
+      "problem": "Users needed a personalized meal planning solution that could calculate their daily caloric needs and provide tailored meal recommendations with detailed nutritional information and recipe links.",
+      "research": "Analyzed nutrition planning apps and user needs for personalized meal recommendations. Researched BMR calculation formulas and macro tracking requirements. Evaluated food API options for comprehensive recipe data.",
+      "design": "Designed an intuitive user interface with clear data input forms and visual meal plan displays. Created a responsive layout using SCSS for styling and focused on accessibility for health-related content.",
+      "development": "Built with PHP for server-side logic and MySQL for data persistence. Integrated Spoonacular API for recipe data and nutritional information. Implemented BMR calculation algorithms and meal plan generation logic. Added favorites functionality with database storage.",
+      "outcome": "Successfully created a functional meal planning system with accurate BMR calculations, comprehensive meal recommendations, and user-friendly favorites management. Demonstrated full-stack development skills with API integration.",
+      "improvements": "Would add user authentication system, individual user accounts, and advanced nutrition analytics features as mentioned in the project roadmap.",
+      "figmaLink": "https://figma.com/project-6",
+      "githubLink": "https://github.com/nora-rasuli/NutriFood",
+      "liveDemo": "https://nutrifood-v2.vercel.app/"
     }
   ]
 }
