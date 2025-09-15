@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Loading Test</title>
+</head>
+<body>
+    <h1>Data Loading Test</h1>
+    <div id="results"></div>
+    
+    <script type="module">
+        const results = document.getElementById('results');
+        
+        const possiblePaths = [
+            "/data/projects.json",
+            "./data/projects.json",
+            "data/projects.json",
+            "/projects.json",
+            "./projects.json",
+            "projects.json"
+        ];
+        
+        async function testPaths() {
+            results.innerHTML = '<p>Testing data loading paths...</p>';
+            
+            for (const path of possiblePaths) {
+                try {
+                    console.log(`Testing: ${path}`);
+                    const response = await fetch(path);
+                    if (response.ok) {
+                        const data = await response.json();
+                        results.innerHTML += `<p style="color: green;">✅ SUCCESS: ${path} - Found ${data.projects?.length || 0} projects</p>`;
+                        console.log(`SUCCESS: ${path}`, data);
+                    } else {
+                        results.innerHTML += `<p style="color: red;">❌ FAILED: ${path} - Status: ${response.status}</p>`;
+                        console.log(`FAILED: ${path} - Status: ${response.status}`);
+                    }
+                } catch (err) {
+                    results.innerHTML += `<p style="color: red;">❌ ERROR: ${path} - ${err.message}</p>`;
+                    console.log(`ERROR: ${path}`, err);
+                }
+            }
+        }
+        
+        testPaths();
+    </script>
+</body>
+</html>
