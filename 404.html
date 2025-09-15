@@ -3,67 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page Not Found - Nora Rasuli</title>
+    <title>404 - Page Not Found | Nora Rasuli</title>
     <meta
       name="description"
-      content="The page you're looking for doesn't exist."
+      content="The page you're looking for doesn't exist. Return to Nora Rasuli's portfolio to explore frontend projects and experience."
     />
-
-    <link rel="stylesheet" href="styles/tokens.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/components.css" />
-    <link rel="stylesheet" href="styles/themes.css" />
-    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   </head>
   <body>
     <header class="header">
-      <nav class="nav" role="navigation" aria-label="Main navigation">
-        <div class="nav__container">
-          <a href="/" class="nav__brand" aria-label="Nora Rasuli - Home"
-            >Nora Rasuli</a
-          >
-          <div class="nav__links">
-            <a href="/#projects" class="nav__link">Projects</a>
-            <a href="/#about" class="nav__link">About</a>
-            <a href="/#contact" class="nav__link">Contact</a>
-            <button
-              class="theme-toggle"
-              aria-label="Toggle dark mode"
-              title="Toggle dark mode"
-            >
-              <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
-            </button>
-          </div>
-        </div>
-      </nav>
+      <div class="container">
+        <h1 class="logo">Portfolio</h1>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          aria-label="Toggle dark mode"
+        >
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
     </header>
 
     <main class="main">
-      <section class="error-page">
-        <div class="error-page__container">
-          <h1 class="error-page__title">404</h1>
-          <h2 class="error-page__subtitle">Page Not Found</h2>
-          <p class="error-page__description">
-            Sorry, the page you're looking for doesn't exist or has been moved.
-          </p>
-          <div class="error-page__actions">
-            <a href="/" class="button button--primary">Go Home</a>
-            <a href="/#projects" class="button button--secondary"
-              >View Projects</a
-            >
+      <div class="container">
+        <section class="error-page">
+          <div class="error-content">
+            <div class="error-icon">🚀</div>
+            <h1 class="error-title">404</h1>
+            <h2 class="error-subtitle">Page Not Found</h2>
+            <p class="error-description">
+              Oops! The page you're looking for seems to have drifted off into
+              the digital void. Don't worry, even the best developers encounter
+              missing pages from time to time.
+            </p>
+            <div class="error-actions">
+              <a href="/" class="cta-button primary">Back to Home</a>
+              <a href="/#featured-projects" class="cta-button secondary"
+                >View Projects</a
+              >
+            </div>
+            <div class="error-suggestions">
+              <h3>Maybe you were looking for:</h3>
+              <ul class="suggestion-links">
+                <li>
+                  <a href="/projects/project-1.html"
+                    >E-Commerce Analytics Dashboard</a
+                  >
+                </li>
+                <li><a href="/projects/project-2.html">Weather App</a></li>
+                <li>
+                  <a href="/projects/project-3.html">Task Management Tool</a>
+                </li>
+                <li>
+                  <a href="/projects/project-4.html">Portfolio Website</a>
+                </li>
+                <li><a href="/projects/project-5.html">Giant Pennies</a></li>
+                <li><a href="/projects/project-6.html">NutriFood</a></li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">
-      <div class="footer__container">
-        <p class="footer__text">
-          &copy; 2024 Nora Rasuli. All rights reserved.
+      <div class="container">
+        <p>
+          &copy; 2024 Frontend Portfolio. Built with HTML, CSS, and JavaScript.
         </p>
       </div>
     </footer>
 
-    <script type="module" src="scripts/theme-toggle.js"></script>
+    <script src="scripts/darkmode.js"></script>
   </body>
 </html>
