@@ -116,6 +116,7 @@ class PortfolioApp {
                 </div>
                 <div class="project-content">
                     <h3 class="project-title">${project.title}</h3>
+                    <p class="project-tagline">${project.tagline || ""}</p>
                     <p class="project-description">${project.description}</p>
                     <div class="project-technologies">
                         ${
@@ -333,16 +334,66 @@ class ProjectPage {
     const container = document.querySelector(".project-content");
     if (container) {
       container.innerHTML = `
-                <h1 class="project-title">${this.currentProject.title}</h1>
-                <p class="project-description">${
-                  this.currentProject.description
-                }</p>
-                <div class="project-image-large">
-                    ${this.getProjectIcon(this.currentProject.title)}
-                </div>
-                <div class="project-details">
-                    <div class="detail-section">
-                        <h3>Technologies</h3>
+                <!-- Project Overview -->
+                <section class="project-overview">
+                    <h1 class="project-title">${this.currentProject.title}</h1>
+                    <p class="project-tagline">${
+                      this.currentProject.tagline || ""
+                    }</p>
+                    <p class="project-description">${
+                      this.currentProject.description
+                    }</p>
+                    <div class="project-links">
+                        <a href="${
+                          this.currentProject.figmaLink || "#"
+                        }" class="project-link" target="_blank" rel="noopener">
+                            <span class="link-icon">🎨</span>
+                            View Figma Design
+                        </a>
+                        <a href="${
+                          this.currentProject.githubLink || "#"
+                        }" class="project-link" target="_blank" rel="noopener">
+                            <span class="link-icon">💻</span>
+                            View on GitHub
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Problem Statement -->
+                <section class="project-section">
+                    <h2 class="section-title">Problem Statement</h2>
+                    <p class="section-content">${
+                      this.currentProject.problem || ""
+                    }</p>
+                </section>
+
+                <!-- Research & Approach -->
+                <section class="project-section">
+                    <h2 class="section-title">Research & Approach</h2>
+                    <p class="section-content">${
+                      this.currentProject.research || ""
+                    }</p>
+                </section>
+
+                <!-- Design & Figma -->
+                <section class="project-section">
+                    <h2 class="section-title">Design & Figma</h2>
+                    <p class="section-content">${
+                      this.currentProject.design || ""
+                    }</p>
+                    <div class="project-image-large">
+                        ${this.getProjectIcon(this.currentProject.title)}
+                    </div>
+                </section>
+
+                <!-- Development -->
+                <section class="project-section">
+                    <h2 class="section-title">Development</h2>
+                    <p class="section-content">${
+                      this.currentProject.development || ""
+                    }</p>
+                    <div class="technologies-section">
+                        <h3>Technologies Used</h3>
                         <div class="technologies-list">
                             ${
                               this.currentProject.technologies
@@ -356,19 +407,19 @@ class ProjectPage {
                             }
                         </div>
                     </div>
-                    <div class="detail-section">
-                        <h3>Key Features</h3>
-                        <ul class="features-list">
-                            ${
-                              this.currentProject.features
-                                ? this.currentProject.features
-                                    .map((feature) => `<li>${feature}</li>`)
-                                    .join("")
-                                : ""
-                            }
-                        </ul>
+                </section>
+
+                <!-- Outcome & Impact -->
+                <section class="project-section">
+                    <h2 class="section-title">Outcome & Impact</h2>
+                    <p class="section-content">${
+                      this.currentProject.outcome || ""
+                    }</p>
+                    <div class="improvements-section">
+                        <h3>Future Improvements</h3>
+                        <p>${this.currentProject.improvements || ""}</p>
                     </div>
-                </div>
+                </section>
             `;
     }
 
@@ -416,7 +467,7 @@ class ProjectPage {
           ? this.currentIndex - 1
           : this.projects.length - 1;
       const prevProject = this.projects[prevIndex];
-      prevButton.href = prevProject ? prevProject.url : "#";
+      prevButton.href = prevProject ? `${prevProject.id}.html` : "#";
       prevButton.textContent = `Previous: ${
         prevProject ? prevProject.title : "None"
       }`;
@@ -428,7 +479,7 @@ class ProjectPage {
           ? this.currentIndex + 1
           : 0;
       const nextProject = this.projects[nextIndex];
-      nextButton.href = nextProject ? nextProject.url : "#";
+      nextButton.href = nextProject ? `${nextProject.id}.html` : "#";
       nextButton.textContent = `Next: ${
         nextProject ? nextProject.title : "None"
       }`;
@@ -443,7 +494,7 @@ class ProjectPage {
 
     const newProject = this.projects[newIndex];
     if (newProject) {
-      window.location.href = newProject.url;
+      window.location.href = `${newProject.id}.html`;
     }
   }
 

@@ -26,7 +26,71 @@
 
     <main class="main">
       <div class="project-content">
-        <!-- Project content will be loaded dynamically -->
+        <!-- Project Overview -->
+        <section class="project-overview">
+          <h1 class="project-title">{{PROJECT_TITLE}}</h1>
+          <p class="project-tagline">{{PROJECT_TAGLINE}}</p>
+          <p class="project-description">{{PROJECT_DESCRIPTION}}</p>
+          <div class="project-links">
+            <a
+              href="{{FIGMA_LINK}}"
+              class="project-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="link-icon">🎨</span>
+              View Figma Design
+            </a>
+            <a
+              href="{{GITHUB_LINK}}"
+              class="project-link"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="link-icon">💻</span>
+              View on GitHub
+            </a>
+          </div>
+        </section>
+
+        <!-- Problem Statement -->
+        <section class="project-section">
+          <h2 class="section-title">Problem Statement</h2>
+          <p class="section-content">{{PROBLEM_STATEMENT}}</p>
+        </section>
+
+        <!-- Research & Approach -->
+        <section class="project-section">
+          <h2 class="section-title">Research & Approach</h2>
+          <p class="section-content">{{RESEARCH_APPROACH}}</p>
+        </section>
+
+        <!-- Design & Figma -->
+        <section class="project-section">
+          <h2 class="section-title">Design & Figma</h2>
+          <p class="section-content">{{DESIGN_FIGMA}}</p>
+          <div class="project-image-large">{{PROJECT_ICON}}</div>
+        </section>
+
+        <!-- Development -->
+        <section class="project-section">
+          <h2 class="section-title">Development</h2>
+          <p class="section-content">{{DEVELOPMENT_DETAILS}}</p>
+          <div class="technologies-section">
+            <h3>Technologies Used</h3>
+            <div class="technologies-list">{{TECHNOLOGIES}}</div>
+          </div>
+        </section>
+
+        <!-- Outcome & Impact -->
+        <section class="project-section">
+          <h2 class="section-title">Outcome & Impact</h2>
+          <p class="section-content">{{OUTCOME_IMPACT}}</p>
+          <div class="improvements-section">
+            <h3>Future Improvements</h3>
+            <p>{{IMPROVEMENTS}}</p>
+          </div>
+        </section>
       </div>
     </main>
 
