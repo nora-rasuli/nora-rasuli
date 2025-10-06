@@ -48,21 +48,8 @@
             </div>
             <div class="error-suggestions">
               <h3>Maybe you were looking for:</h3>
-              <ul class="suggestion-links">
-                <li>
-                  <a href="projects/project-1.html"
-                    >E-Commerce Analytics Dashboard</a
-                  >
-                </li>
-                <li><a href="projects/project-2.html">Weather App</a></li>
-                <li>
-                  <a href="projects/project-3.html">Task Management Tool</a>
-                </li>
-                <li>
-                  <a href="projects/project-4.html">Portfolio Website</a>
-                </li>
-                <li><a href="projects/project-5.html">Giant Pennies</a></li>
-                <li><a href="projects/project-6.html">NutriFood</a></li>
+              <ul class="suggestion-links" id="projectSuggestions">
+                <!-- Projects will be loaded dynamically -->
               </ul>
             </div>
           </div>
@@ -73,11 +60,36 @@
     <footer class="footer">
       <div class="container">
         <p>
-          &copy; 2024 Frontend Portfolio. Built with HTML, CSS, and JavaScript.
+          &copy; 2025 Frontend Portfolio. Built with HTML, CSS, and JavaScript.
         </p>
       </div>
     </footer>
 
     <script src="scripts/darkmode.js"></script>
+    <script>
+      // Load projects dynamically for 404 page suggestions
+      async function loadProjectSuggestions() {
+        try {
+          const response = await fetch("projects.json");
+          const data = await response.json();
+          const suggestionsContainer =
+            document.getElementById("projectSuggestions");
+
+          if (suggestionsContainer && data.projects) {
+            suggestionsContainer.innerHTML = data.projects
+              .map(
+                (project) =>
+                  `<li><a href="${project.url}">${project.title}</a></li>`
+              )
+              .join("");
+          }
+        } catch (error) {
+          console.error("Error loading project suggestions:", error);
+        }
+      }
+
+      // Load suggestions when page loads
+      document.addEventListener("DOMContentLoaded", loadProjectSuggestions);
+    </script>
   </body>
 </html>

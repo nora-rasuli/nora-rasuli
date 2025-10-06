@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Giant Pennies - Portfolio</title>
-    <meta name="description" content="A React-based web application built with Create React App and styled with Tailwind CSS. Features modern development practices, responsive design, and optimized build process for production deployment." />
+    <title>{{TITLE}} - Portfolio</title>
+    <meta name="description" content="{{DESCRIPTION}}" />
     <link rel="stylesheet" href="../styles/base.css" />
     <link rel="stylesheet" href="../styles/theme.css" />
     <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
@@ -28,12 +28,12 @@
       <div class="project-content">
         <!-- Project Overview -->
         <section class="project-overview">
-          <h1 class="project-title">Giant Pennies</h1>
-          <p class="project-tagline">Interactive React application with modern UI</p>
-          <p class="project-description">A React-based web application built with Create React App and styled with Tailwind CSS. Features modern development practices, responsive design, and optimized build process for production deployment.</p>
+          <h1 class="project-title">{{PROJECT_TITLE}}</h1>
+          <p class="project-tagline">{{PROJECT_TAGLINE}}</p>
+          <p class="project-description">{{PROJECT_DESCRIPTION}}</p>
           <div class="project-links">
             <a
-              href="https://giant-pennies.vercel.app/login"
+              href="{{LIVE_DEMO}}"
               class="project-link"
               target="_blank"
               rel="noopener"
@@ -42,7 +42,7 @@
               Live Demo
             </a>
             <a
-              href="https://github.com/nora-rasuli/giant-pennies"
+              href="{{GITHUB_LINK}}"
               class="project-link"
               target="_blank"
               rel="noopener"
@@ -51,7 +51,7 @@
               View on GitHub
             </a>
             <a
-              href="https://figma.com/project-5"
+              href="{{FIGMA_LINK}}"
               class="project-link"
               target="_blank"
               rel="noopener"
@@ -65,39 +65,39 @@
         <!-- Problem Statement -->
         <section class="project-section">
           <h2 class="section-title">Problem Statement</h2>
-          <p class="section-content">Needed to create a modern, interactive web application that demonstrates proficiency with React ecosystem and modern development tools while maintaining clean, maintainable code.</p>
+          <p class="section-content">{{PROBLEM_STATEMENT}}</p>
         </section>
 
         <!-- Research & Approach -->
         <section class="project-section">
           <h2 class="section-title">Research & Approach</h2>
-          <p class="section-content">Analyzed React best practices and modern development workflows. Researched Tailwind CSS for utility-first styling approach and Vercel for seamless deployment pipeline.</p>
+          <p class="section-content">{{RESEARCH_APPROACH}}</p>
         </section>
 
         <!-- Design & Figma -->
         <section class="project-section">
           <h2 class="section-title">Design & Figma</h2>
-          <p class="section-content">Designed a clean, modern interface using Tailwind CSS utility classes. Focused on responsive design principles and component-based architecture for maintainability.</p>
-          <div class="project-image-large">🪙</div>
+          <p class="section-content">{{DESIGN_FIGMA}}</p>
+          <div class="project-image-large">{{PROJECT_ICON}}</div>
         </section>
 
         <!-- Development -->
         <section class="project-section">
           <h2 class="section-title">Development</h2>
-          <p class="section-content">Built with Create React App for rapid development setup. Implemented component-based architecture with React hooks. Used Tailwind CSS for styling and PostCSS for build optimization. Deployed to Vercel for production hosting.</p>
+          <p class="section-content">{{DEVELOPMENT_DETAILS}}</p>
           <div class="technologies-section">
             <h3>Technologies Used</h3>
-            <div class="technologies-list"><span class="tech-tag-large">React</span><span class="tech-tag-large">JavaScript</span><span class="tech-tag-large">Tailwind CSS</span><span class="tech-tag-large">Create React App</span><span class="tech-tag-large">Vercel</span></div>
+            <div class="technologies-list">{{TECHNOLOGIES}}</div>
           </div>
         </section>
 
         <!-- Outcome & Impact -->
         <section class="project-section">
           <h2 class="section-title">Outcome & Impact</h2>
-          <p class="section-content">Successfully deployed application with 0 build errors, responsive design across all devices, and optimized performance. Demonstrated proficiency with modern React development stack.</p>
+          <p class="section-content">{{OUTCOME_IMPACT}}</p>
           <div class="improvements-section">
             <h3>Future Improvements</h3>
-            <p>Would add state management with Redux or Context API, implement testing with Jest/React Testing Library, and add more interactive features.</p>
+            <p>{{IMPROVEMENTS}}</p>
           </div>
         </section>
       </div>
@@ -106,7 +106,7 @@
     <footer class="footer">
       <div class="container">
         <p>
-          &copy; 2024 Frontend Portfolio. Built with HTML, CSS, and JavaScript.
+          &copy; 2025 Frontend Portfolio. Built with HTML, CSS, and JavaScript.
         </p>
       </div>
     </footer>

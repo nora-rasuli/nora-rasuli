@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task Management Tool - Portfolio</title>
-    <meta name="description" content="A productivity-focused task management application with drag-and-drop functionality, project organization, and team collaboration features. Designed for efficiency and ease of use." />
+    <title>{{TITLE}} - Portfolio</title>
+    <meta name="description" content="{{DESCRIPTION}}" />
     <link rel="stylesheet" href="../styles/base.css" />
     <link rel="stylesheet" href="../styles/theme.css" />
     <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
@@ -28,12 +28,12 @@
       <div class="project-content">
         <!-- Project Overview -->
         <section class="project-overview">
-          <h1 class="project-title">Task Management Tool</h1>
-          <p class="project-tagline">Streamlined productivity for modern teams</p>
-          <p class="project-description">A productivity-focused task management application with drag-and-drop functionality, project organization, and team collaboration features. Designed for efficiency and ease of use.</p>
+          <h1 class="project-title">{{PROJECT_TITLE}}</h1>
+          <p class="project-tagline">{{PROJECT_TAGLINE}}</p>
+          <p class="project-description">{{PROJECT_DESCRIPTION}}</p>
           <div class="project-links">
             <a
-              href="#"
+              href="{{LIVE_DEMO}}"
               class="project-link"
               target="_blank"
               rel="noopener"
@@ -42,7 +42,7 @@
               Live Demo
             </a>
             <a
-              href="https://github.com/nora-rasuli/task-manager"
+              href="{{GITHUB_LINK}}"
               class="project-link"
               target="_blank"
               rel="noopener"
@@ -51,7 +51,7 @@
               View on GitHub
             </a>
             <a
-              href="https://figma.com/project-3"
+              href="{{FIGMA_LINK}}"
               class="project-link"
               target="_blank"
               rel="noopener"
@@ -65,39 +65,39 @@
         <!-- Problem Statement -->
         <section class="project-section">
           <h2 class="section-title">Problem Statement</h2>
-          <p class="section-content">Small teams needed a simple, cost-effective task management solution that didn't require complex setup or training. Existing tools were either too basic or too complex.</p>
+          <p class="section-content">{{PROBLEM_STATEMENT}}</p>
         </section>
 
         <!-- Research & Approach -->
         <section class="project-section">
           <h2 class="section-title">Research & Approach</h2>
-          <p class="section-content">Interviewed 8 small team leads and conducted competitive analysis. Found that 85% of teams needed basic project organization, 70% wanted drag-and-drop functionality, and 60% needed real-time collaboration.</p>
+          <p class="section-content">{{RESEARCH_APPROACH}}</p>
         </section>
 
         <!-- Design & Figma -->
         <section class="project-section">
           <h2 class="section-title">Design & Figma</h2>
-          <p class="section-content">Created user flows and wireframes in Figma, focusing on intuitive drag-and-drop interactions. Designed a clean, card-based interface with clear visual hierarchy and status indicators.</p>
-          <div class="project-image-large">✅</div>
+          <p class="section-content">{{DESIGN_FIGMA}}</p>
+          <div class="project-image-large">{{PROJECT_ICON}}</div>
         </section>
 
         <!-- Development -->
         <section class="project-section">
           <h2 class="section-title">Development</h2>
-          <p class="section-content">Built with React and TypeScript for maintainability. Implemented drag-and-drop using react-beautiful-dnd. Used local storage for offline functionality and real-time updates with WebSocket connections.</p>
+          <p class="section-content">{{DEVELOPMENT_DETAILS}}</p>
           <div class="technologies-section">
             <h3>Technologies Used</h3>
-            <div class="technologies-list"><span class="tech-tag-large">React</span><span class="tech-tag-large">TypeScript</span><span class="tech-tag-large">Local Storage</span><span class="tech-tag-large">CSS Grid</span></div>
+            <div class="technologies-list">{{TECHNOLOGIES}}</div>
           </div>
         </section>
 
         <!-- Outcome & Impact -->
         <section class="project-section">
           <h2 class="section-title">Outcome & Impact</h2>
-          <p class="section-content">Reduced project setup time by 60%, increased team productivity by 35%, and achieved 95% user adoption rate within first month.</p>
+          <p class="section-content">{{OUTCOME_IMPACT}}</p>
           <div class="improvements-section">
             <h3>Future Improvements</h3>
-            <p>Would add time tracking, Gantt charts, and integration with popular tools like Slack and Google Calendar.</p>
+            <p>{{IMPROVEMENTS}}</p>
           </div>
         </section>
       </div>
@@ -106,7 +106,7 @@
     <footer class="footer">
       <div class="container">
         <p>
-          &copy; 2024 Frontend Portfolio. Built with HTML, CSS, and JavaScript.
+          &copy; 2025 Frontend Portfolio. Built with HTML, CSS, and JavaScript.
         </p>
       </div>
     </footer>

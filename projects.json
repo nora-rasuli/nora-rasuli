@@ -1,23 +1,6 @@
 {
   "projects": [
     {
-      "id": "project-1",
-      "title": "E-Commerce Analytics Dashboard",
-      "tagline": "Real-time insights for data-driven decisions",
-      "description": "A comprehensive admin dashboard for managing e-commerce operations with real-time analytics, inventory management, and customer insights. Built with modern web technologies and responsive design principles.",
-      "image": "assets/project-1.jpg",
-      "url": "projects/project-1.html",
-      "technologies": ["React", "TypeScript", "Chart.js", "CSS Modules"],
-      "problem": "E-commerce managers needed a centralized way to monitor business performance, track inventory, and understand customer behavior across multiple sales channels.",
-      "research": "Conducted interviews with 5 e-commerce managers to understand pain points. Key findings: 70% spent 2+ hours daily gathering data from different sources, 60% made decisions based on outdated information.",
-      "design": "Created wireframes in Figma focusing on information hierarchy and data visualization. Designed mobile-first responsive layouts with accessibility in mind (WCAG 2.1 AA compliant).",
-      "development": "Built with React and TypeScript for type safety. Implemented real-time data updates using WebSocket connections. Used Chart.js for interactive visualizations and CSS Modules for component-scoped styling.",
-      "outcome": "Reduced data gathering time by 80%, improved decision-making speed by 65%, and increased user satisfaction scores from 3.2 to 4.7/5.",
-      "improvements": "Would add predictive analytics and automated reporting features given more time.",
-      "figmaLink": "https://figma.com/project-1",
-      "githubLink": "https://github.com/nora-rasuli/ecommerce-dashboard"
-    },
-    {
       "id": "project-2",
       "title": "Weather App",
       "tagline": "Clean, intuitive weather at your fingertips",

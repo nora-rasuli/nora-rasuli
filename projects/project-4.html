@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website - Portfolio</title>
-    <meta name="description" content="A responsive portfolio website showcasing creative work and professional experience. Features smooth animations, dark mode support, and optimized performance across all devices." />
+    <title>{{TITLE}} - Portfolio</title>
+    <meta name="description" content="{{DESCRIPTION}}" />
     <link rel="stylesheet" href="../styles/base.css" />
     <link rel="stylesheet" href="../styles/theme.css" />
     <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg" />
@@ -28,12 +28,12 @@
       <div class="project-content">
         <!-- Project Overview -->
         <section class="project-overview">
-          <h1 class="project-title">Portfolio Website</h1>
-          <p class="project-tagline">Showcasing design and development skills</p>
-          <p class="project-description">A responsive portfolio website showcasing creative work and professional experience. Features smooth animations, dark mode support, and optimized performance across all devices.</p>
+          <h1 class="project-title">{{PROJECT_TITLE}}</h1>
+          <p class="project-tagline">{{PROJECT_TAGLINE}}</p>
+          <p class="project-description">{{PROJECT_DESCRIPTION}}</p>
           <div class="project-links">
             <a
-              href="#"
+              href="{{LIVE_DEMO}}"
               class="project-link"
               target="_blank"
               rel="noopener"
@@ -42,7 +42,7 @@
               Live Demo
             </a>
             <a
-              href="https://github.com/nora-rasuli/portfolio"
+              href="{{GITHUB_LINK}}"
               class="project-link"
               target="_blank"
               rel="noopener"
@@ -51,7 +51,7 @@
               View on GitHub
             </a>
             <a
-              href="https://figma.com/project-4"
+              href="{{FIGMA_LINK}}"
               class="project-link"
               target="_blank"
               rel="noopener"
@@ -65,39 +65,39 @@
         <!-- Problem Statement -->
         <section class="project-section">
           <h2 class="section-title">Problem Statement</h2>
-          <p class="section-content">Needed a portfolio that effectively demonstrates both design and development skills while being fast, accessible, and easy to maintain. Most portfolio templates were either too generic or too complex.</p>
+          <p class="section-content">{{PROBLEM_STATEMENT}}</p>
         </section>
 
         <!-- Research & Approach -->
         <section class="project-section">
           <h2 class="section-title">Research & Approach</h2>
-          <p class="section-content">Analyzed 20+ developer portfolios and conducted A/B testing with 30 recruiters. Found that clean, minimal designs with clear project stories performed 40% better in initial screening.</p>
+          <p class="section-content">{{RESEARCH_APPROACH}}</p>
         </section>
 
         <!-- Design & Figma -->
         <section class="project-section">
           <h2 class="section-title">Design & Figma</h2>
-          <p class="section-content">Designed a whitespace-driven layout in Figma with focus on typography and project storytelling. Created a consistent visual system with custom CSS properties and smooth micro-interactions.</p>
-          <div class="project-image-large">💼</div>
+          <p class="section-content">{{DESIGN_FIGMA}}</p>
+          <div class="project-image-large">{{PROJECT_ICON}}</div>
         </section>
 
         <!-- Development -->
         <section class="project-section">
           <h2 class="section-title">Development</h2>
-          <p class="section-content">Built with vanilla HTML, CSS, and JavaScript for maximum performance. Implemented smooth scrolling, lazy loading, and accessibility features. Used GSAP for advanced animations and CSS Grid for responsive layouts.</p>
+          <p class="section-content">{{DEVELOPMENT_DETAILS}}</p>
           <div class="technologies-section">
             <h3>Technologies Used</h3>
-            <div class="technologies-list"><span class="tech-tag-large">HTML</span><span class="tech-tag-large">CSS</span><span class="tech-tag-large">JavaScript</span><span class="tech-tag-large">GSAP</span></div>
+            <div class="technologies-list">{{TECHNOLOGIES}}</div>
           </div>
         </section>
 
         <!-- Outcome & Impact -->
         <section class="project-section">
           <h2 class="section-title">Outcome & Impact</h2>
-          <p class="section-content">Achieved 95+ Lighthouse scores across all metrics, 2.3s average load time, and positive feedback from 15+ recruiters and hiring managers.</p>
+          <p class="section-content">{{OUTCOME_IMPACT}}</p>
           <div class="improvements-section">
             <h3>Future Improvements</h3>
-            <p>Would add a blog section and case study templates for future projects.</p>
+            <p>{{IMPROVEMENTS}}</p>
           </div>
         </section>
       </div>
@@ -106,7 +106,7 @@
     <footer class="footer">
       <div class="container">
         <p>
-          &copy; 2024 Frontend Portfolio. Built with HTML, CSS, and JavaScript.
+          &copy; 2025 Frontend Portfolio. Built with HTML, CSS, and JavaScript.
         </p>
       </div>
     </footer>
