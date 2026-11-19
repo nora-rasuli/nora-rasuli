@@ -13,7 +13,7 @@ I specialize in complex data-heavy workflows, reusable component architecture, a
 
 ## Selected public work
 
-- [DisclosureTrace](https://disclosuretrace.vercel.app) — a source-linked workspace for reviewing year-over-year 10-K Item 1A wording changes
+- [Disclosure Trace](https://disclosuretrace.vercel.app) — an on-demand SEC filing workspace for reviewing year-over-year Item 1A wording changes
 - [Portfolio and case studies](https://nora-rasuli.github.io) — personal products presented through problem, user, product-decision, and engineering case studies
 - [Next.js starter](https://github.com/nora-rasuli/starter) — a production-oriented React and TypeScript foundation
 - [Career Tracker](https://github.com/nora-rasuli/career-tracker) — a local-first job-search and interview-preparation tool
