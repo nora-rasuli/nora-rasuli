@@ -14,6 +14,7 @@ I specialize in complex data-heavy workflows, reusable component architecture, a
 
 ## Selected public work
 
+- [Move Canvas](https://move-canvas.vercel.app) — multiplayer motion games, dance comparison, and tennis practice that turn phones into private camera controllers ([source](https://github.com/nora-rasuli/move-canvas))
 - [StateChorus](https://statechorus-eta.vercel.app) — a local-first developer tool that captures real AI-interface traces, diagnoses observable state regressions, and exports evidence for native accessibility review
 - [Disclosure Trace](https://disclosuretrace.vercel.app) — an on-demand SEC filing workspace for reviewing year-over-year Item 1A wording changes
 - [Portfolio and case studies](https://nora-rasuli.github.io) — personal products presented through problem, user, product-decision, and engineering case studies
