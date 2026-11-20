@@ -6,6 +6,7 @@ I specialize in complex data-heavy workflows, reusable component architecture, a
 
 ## Current focus
 
+- Trustworthy, accessible interaction contracts for AI interfaces
 - Source-linked research and document-review interfaces
 - Accessible design systems and resilient interaction patterns
 - Fast, comprehensible workflows for complex product data
@@ -13,6 +14,7 @@ I specialize in complex data-heavy workflows, reusable component architecture, a
 
 ## Selected public work
 
+- [StateChorus](https://statechorus-eta.vercel.app/demo?fixture=FIX-DEMO-BROKEN) — a release-evidence workbench for replaying AI-interface state contracts and routing browser-observable findings to native accessibility review
 - [Disclosure Trace](https://disclosuretrace.vercel.app) — an on-demand SEC filing workspace for reviewing year-over-year Item 1A wording changes
 - [Portfolio and case studies](https://nora-rasuli.github.io) — personal products presented through problem, user, product-decision, and engineering case studies
 - [Next.js starter](https://github.com/nora-rasuli/starter) — a production-oriented React and TypeScript foundation
